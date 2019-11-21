@@ -1,0 +1,161 @@
+
+.compl-header{
+    background-color: #20c0f1 !important;
+}
+.icon-compl{
+    color: white;
+    font-size: 60px;
+    padding: 10px;
+    // margin-right: 20px;
+}
+.col6-color1{
+    background-color: #056384;
+}
+.col6-color2{
+    background-color: #f58b11;
+}
+.col6-color3{
+    background-color: #f5112b;
+}
+.col6-color4{
+    background-color: #09b0ea;
+}
+.col6-color5{
+    background-color: #08c37a;
+}
+.col6-color6{
+    background-color: #e80d81;
+}
+.col6-color7{
+    background-color: #95d40e;
+}
+.col6-color8{
+    background-color: #d46f0e;
+}
+.col6-box{
+    align-items: center !important;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: opx auto;
+    text-align: center;
+    height: 130px;
+}
+.compl-box{
+    color: #f3f0ed;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 12px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.compl-box-color1{
+    background-color: #047ba5;
+}
+.compl-box-color2{
+    background-color: #f9a748;
+}
+.compl-box-color3{
+    background-color: #f74156;
+}
+.compl-box-color4{
+    background-color: #46c6f3;
+}
+.compl-box-color5{
+    background-color: #2ee09b;
+}
+.compl-box-color6{
+    background-color: #f16bb2;
+}
+.compl-box-color7{
+    background-color: #b6f72b;
+}
+.sub-compl-box-colr1{
+    background-color: #046588;
+    border: 1px solid #078ebf;
+}
+.sub-compl-box-colr2{
+    background-color: #e8810a;
+    border: 1px solid #ef7718;
+}
+.sub-compl-box-colr3{
+    background-color: #da0c24;
+    border: 1px solid #c51227;
+}
+.sub-compl-box-colr4{
+    background-color: #099cd0;
+    border: 1px solid #0684b1;
+}
+.sub-compl-box-colr5{
+    background-color: #0ca96c;
+    border: 1px solid #199c69;
+}
+.sub-compl-box-colr6{
+    background-color: #cc0870;
+    border: 1px solid #b10761;
+}
+.sub-compl-box-colr7{
+    background-color: #75a908;
+    border: 1px solid #6b9219;
+}
+.sub-compl-box{
+    color: #f3f0ed;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+.sub-compl-box img{
+    width: 50px;
+    height: 50px;
+    margin-left: 11px;
+    /* border: 1px solid #6f6e6e; */
+    border-radius: 50%;
+}
+.sub-compl-box span{
+    color: #faf8f8;
+    position: absolute;
+    bottom: 7px;
+    left: 0px;
+    right: 5px;
+}
+
+
+
+$colors: #056384, #f58b11, #f5112b, #09b0ea, #08c37a, #e80d81, #95d40e, #d46f0e;
+$back-colors: #046588, #e8810a, #da0c24, #099cd0, #0ca96c, #cc0870, #75a908, #d46f0e;
+$outer-colors: #047ba5, #f9a748, #f74156, #46c6f3, #2ee09b, #f16bb2, #b6f72b, #f89b41;
+$borderColors: #078ebf, #ef7718, #c51227, #0684b1, #199c69, #b10761, #6b9219, #d46f0e;
+
+@each $current-color in $colors {
+    $i: index($colors, $current-color);
+    .col6-box:nth-of-type(#{$i}) { 
+        background-color: $current-color;
+    }
+}
+
+@each $current-color in $borderColors {
+    $i: index($borderColors, $current-color);
+    .col6-box:nth-of-type(#{$i}) > * > .sub-compl-box { 
+        border: 1px solid  $current-color;
+    }
+}
+@each $current-color in $back-colors {
+    $i: index($back-colors, $current-color);
+    .col6-box:nth-of-type(#{$i}) > * > .sub-compl-box { 
+        background-color: $current-color;
+    }
+}
+@each $current-color in $outer-colors {
+    $i: index($outer-colors, $current-color);
+    .col6-box:nth-of-type(#{$i}) > .compl-box  { 
+        background-color: $current-color;
+    }
+}

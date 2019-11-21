@@ -1,0 +1,38 @@
+{
+  "appId": "com.aklogical.app",
+  "appName": "SmartVillage+",
+  "webDir": "www",
+  "npmClient": "npm",
+  "bundledWebRuntime": false,
+  "server": {
+    "iosScheme": "ionic",
+    "androidScheme": "http"
+  },
+  "backgroundColor": "#ffffffff",
+  "android": {
+    "backgroundColor": "#ffffffff",
+    "allowMixedContent": true,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": true
+  },
+  "ios": {
+    "backgroundColor": "#ffffffff",
+    "cordovaSwiftVersion": "3.0",
+    "minVersion": "11.3",
+    "cordovaLinkerFlags": [
+      "-ObjC"
+    ]
+  },
+  "cordova": {
+    "preferences": {
+      "ScrollEnabled": "false",
+      "android-minSdkVersion": "19",
+      "BackupWebStorage": "none",
+      "SplashMaintainAspectRatio": "true",
+      "FadeSplashScreenDuration": "300",
+      "SplashShowOnlyFirstTime": "false",
+      "SplashScreen": "screen",
+      "SplashScreenDelay": "3000"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+<ion-header>
+  <div class="row no-margin header-part" [routerLink]="['/atikraman-regtokan']">
+    <div class="col-12 center-item">
+        <ion-icon name="arrow-back" class="icon-header"></ion-icon>
+        <span>
+          Atikraman page
+        </span>
+    </div>
+  </div>
+</ion-header>
+<ion-content>
+  <div class="row no-margin">
+    <div class="col-12">
+        <div class="card top-margin10 bottom-margin10" style=" width: 18rem;">
+            <div class="card-body ati-regtokn" style="background-color: #f7ebe3;">
+              <span>Your complaint successfully registered</span>
+              <span>Your token number is 4600</span>
+            </div>
+          </div>
+      </div>     
+    </div>
+    <div class="row no-margin" >
+      <div class="col-6 " style="width: 100%; padding: 0px 1px 0px 15px;" [routerLink]="['/atikraman']">
+          <button type="button" class="btn btn-primary btn-sm btn-newCompl" style="width: 100%; background-color: #0799a5;">New Complaint</button>
+      </div>
+      <div class="col-6 " style="width: 100%; padding: 0px 15px 0px 1px;" [routerLink]="['/compbox-list']">
+          <button type="button" class="btn btn-primary btn-sm btn-newCompl" style="width: 100%; background-color: #0799a5;">My Complaint</button>
+      </div>
+    </div>
+    
+    <!-- <div class="row no-margin footer-btn" [routerLink]="['/dashboard']">
+      <div class="col-12" style="">
+          <button type="button" class="btn btn-primary btn-sm " style="background-color: #0799a5;border: 0px solid gray;">Go to dashboard</button>
+
+      </div>
+    </div> -->
+
+</ion-content>
+<ion-footer class="footer-part" [routerLink]="['/dashboard']">
+  <div class="row no-margin go-next">
+      <div class="col-12">
+          <span>Go to dashboard</span>
+      </div>
+    </div>
+</ion-footer>

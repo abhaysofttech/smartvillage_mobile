@@ -1,0 +1,8 @@
+{
+  "name": "SmartVillage",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

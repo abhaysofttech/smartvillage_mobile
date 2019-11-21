@@ -1,0 +1,89 @@
+
+<ion-header>
+    <div class="row no-margin header-part" [routerLink]="['/']">
+      <div class="col-12 center-item">
+        <ion-icon name="arrow-back" class="icon-header"></ion-icon>
+        <span class="hindiFont">
+          My complaint list
+        </span>
+      </div>
+    </div>
+  </ion-header>
+
+<ion-content>
+<ion-card>
+    <div class="row no-margin">
+
+          <div class="col-6 no-padding col6-box" [routerLink]="['/complaint/atikraman',complainCategory.complainname]"  *ngFor="let complainCategory of complainRegType">
+              <div class="compl-box">
+                  <div class="sub-compl-box">
+                      <img src="../../../assets/logos/{{complainCategory.complainname}}.png">
+                      <span>{{complainCategory.complainTitle}}</span>
+                  </div>
+                  
+              </div>
+          </div>
+          <div class="col-6 no-padding col6-box col6-color2">
+              <div class="compl-box compl-box-color2">
+                  <div class="sub-compl-box sub-compl-box-colr2">
+                      <img src="../../../assets/logos/4.png">
+                      <span>अवैध निर्माण</span>
+                  </div>
+              </div>
+          </div>
+          <div class="col-6 no-padding col6-box col6-color3">
+              <div class="compl-box compl-box-color3">
+                  <div class="sub-compl-box sub-compl-box-colr3">
+                      <img src="../../../assets/logos/5.png">
+                      <span>जानवर</span>
+                  </div>
+                  
+              </div>
+          </div>
+          <div class="col-6 no-padding col6-box col6-color4">
+              <div class="compl-box compl-box-color4">
+                  <div class="sub-compl-box sub-compl-box-colr4">
+                      <img src="../../../assets/logos/3.png">
+                      <span>बगीचा</span>
+                  </div>
+              </div>
+          </div>
+          <div class="col-6 no-padding col6-box col6-color5">
+              <div class="compl-box compl-box-color5">
+                  <div class="sub-compl-box sub-compl-box-colr5">
+                      <img src="../../../assets/logos/6.png">
+                      <span>मरम्मत </span>
+                  </div>
+                  
+              </div>
+          </div>
+          <div class="col-6 no-padding col6-box col6-color6">
+              <div class="compl-box compl-box-color6">
+                  <div class="sub-compl-box sub-compl-box-colr6">
+                      <img src="../../../assets/logos/2.png">
+                      <span>सफाई</span>
+                  </div>
+              </div>
+          </div>
+          <div class="col-6 no-padding col6-box col6-color7">
+              <div class="compl-box compl-box-color7">
+                  <div class="sub-compl-box sub-compl-box-colr7">
+                      <img src="../../../assets/logos/7.png">
+                      <span>स्ट्रीट् लाइट</span>
+                  </div>
+                  
+              </div>
+          </div>
+          <div class="col-6 no-padding col6-box col6-color8">
+            <div class="compl-box compl-box-color7">
+                <div class="sub-compl-box sub-compl-box-colr7">
+                    <img src="../../../assets/logos/7.png">
+                    <span>More</span>
+                </div>
+                
+            </div>
+        </div>
+          
+    </div>
+</ion-card>
+</ion-content>

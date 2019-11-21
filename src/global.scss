@@ -1,0 +1,157 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+ion-toolbar{
+    --min-height: 15px !important;
+    color: #fff;
+    --background: linear-gradient(90deg, #088b98, #2c4d8e) !important;
+}
+ion-title{
+    font-size: 1rem;
+}
+ion-menu-button{
+    height: 40px;
+}
+.sidemenu-title{
+    padding: 8px 20px;
+}
+.swiper-pagination-bullet {
+    background: #0a0a0a;
+    opacity: 0.7;
+}
+.swiper-pagination-bullet-active {
+    background: #3880ff;
+}
+.form-control{
+    font-size: .9rem !important;
+}
+.border-red{
+    border: 1px solid red;
+}
+.border-blue{
+    border: 1px solid blue;
+}
+.no-margin{
+    margin: 0px !important;
+}
+.no-padding{
+    padding: 0px !important;
+}
+.top-margin10{
+    margin-top: 10px !important;
+}
+.bottom-margin10{
+    margin-bottom: 10px !important;
+}
+.padding10{
+    padding: 10px !important;
+}
+.padding5{
+    padding: 5px !important;
+}
+.header-section{
+    display: flex;
+    align-items: center;
+}
+.header-part{
+    background-image: linear-gradient(to right, #0d7ba4, #093749);
+    color: #f7f6f4;
+    padding: 12px 0px;
+}
+.center-item{
+    display: flex;
+    align-items: center;
+}
+.icon-header {
+    color: #f8f5f5;
+    // margin-right: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    // margin-top: 0px;
+}
+.header-part span{
+    margin-left: 10px;
+}
+
+.header-bg{
+    background-color: #20c0f1 !important;
+}
+
+.header-lbl{
+    color: rgb(248, 245, 245);
+    position: absolute;
+    top: 8px;
+}
+.alert-head{
+    font-size: 1rem !important;
+    padding: .5rem 1rem  !important;
+    text-align: center  !important;
+    #alert-1-hdr{
+        border-bottom: 1px solid rgba(23, 162, 184, 0.48);
+        padding-bottom: 6px;
+        color: #0c5460;
+    font-size: 1rem;
+    }
+   
+}
+.alert-wrapper {
+    #alert-1-msg{
+        padding: .5rem 1rem  !important;
+        color: #096d7d;
+    }
+}
+ .footer-part{
+    background-color: #0799a5;
+    color: rgb(247, 246, 244); 
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+ }
+//  ********compnbox-list and helpline number pg************
+.complbox-list{
+    padding: 5px !important;
+    background-color: #f7ebe3;
+}
+.complbox-list span{
+    font-size: 13px;
+    line-height: 30px !important;
+}
+.sub-listbox h5{
+    color: #f56905;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 0px 0px 0px;
+}
+.sub-listbox h6{
+    color: #9c9a9a;
+    font-size: 13px;
+    // font-family: KrutiDev !important;
+
+    // line-height: 10px !important;
+}
+
+ 

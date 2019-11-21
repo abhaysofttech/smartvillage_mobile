@@ -1,0 +1,94 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide>
+        <img src="../../../assets/41.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="../../../assets/42.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="../../../assets/43.jpg">
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+  <div class="row no-margin">
+    <div class="col-6 padding5" [routerLink]="['/complaint/dash']">
+      <div class="dash-box">
+        <span>नयी शिकायत</span>
+        <div class="circle-img">
+          <img src="../../../assets/dashboard icons/1.png">
+        </div>
+      </div>
+    </div>
+    <div class="col-6 padding5" [routerLink]="['/complaint/compbox-list']">
+      <div class="dash-box">
+        <span>मेरी शिकायत</span>
+        <div class="circle-img">
+          <img src="../../../assets/dashboard icons/2.png">
+        </div>
+      </div>
+    </div>
+    <div class="col-6 padding5" [routerLink]="['/complaint/yojna-list']">
+      <div class="dash-box">
+        <span>facility</span>
+        <div class="circle-img">
+          <img src="../../../assets/dashboard icons/3.png">
+        </div>
+      </div>
+    </div>
+    <div class="col-6 padding5" [routerLink]="['/complaint/details-pg']">
+      <div class="dash-box">
+        <span>Details</span>
+        <div class="circle-img">
+          <img src="../../../assets/dashboard icons/4.png">
+        </div>
+      </div>
+    </div>
+    <div class="col-6 padding5" [routerLink]="['/homepg']">
+      <div class="dash-box">
+        <span>My Home</span>
+        <div class="circle-img">
+          <img src="../../../assets/dashboard icons/5.png">
+        </div>
+      </div>
+    </div>
+    <div class="col-6 padding5" [routerLink]="['/sugg-pg']">
+      <div class="dash-box">
+        <span>सुझाव</span>
+        <div class="circle-img">
+          <img src="../../../assets/dashboard icons/6.png">
+        </div>
+      </div>
+    </div>
+    <div class="col-6 padding5" [routerLink]="['/helpnumber']">
+      <div class="dash-box">
+        <span>आवश्यक नंबर</span>
+        <div class="circle-img">
+          <img src="../../../assets/dashboard icons/7.png">
+        </div>
+      </div>
+    </div>
+    <div class="col-6 padding5" [routerLink]="['/news']">
+      <div class="dash-box">
+        <span>समाचार</span>
+        <div class="circle-img">
+          <img src="../../../assets/dashboard icons/8.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

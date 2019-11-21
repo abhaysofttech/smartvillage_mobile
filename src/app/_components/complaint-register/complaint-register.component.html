@@ -1,0 +1,52 @@
+<form [formGroup]="complainRegForm" (ngSubmit)="onSubmit()">
+  <div class="row no-margin">
+    <div class="col-12">
+      <label class="lbl-txt">Register your complaint</label>
+    </div>
+    <div class="col-12 atikr-compl-box">
+      <div class="card">
+        <div class="card-body">
+
+          <div class="form-group">
+            <label for="cusername">Enter Your Name</label>
+            <input formControlName="cusername" type="text" class="form-control" id="cusername" placeholder="Enter Your FullName">
+          </div>
+
+          <div class="form-group btn-drop">
+            <label for="complainType">Select Complain Type</label>
+            <select class="form-control"  formControlName="complainType" id="complainType">
+              <option *ngFor="let complainType of complainType" value="{{complainType.complainname}}">
+                {{complainType.complainTitle}}</option>
+            </select>
+          </div>
+
+          <div class="form-group btn-drop">
+            <label for="wardDetail">Select Ward / Ward Member Name</label>
+            <select class="form-control" formControlName="wardDetail" id="wardDetail">
+              <!-- <option *ngFor="let wardDetail of wardDetail" value="{{wardDetail.wardNo}}">
+                {{wardDetail.wardNo | wardDetail.wardName}}</option> -->
+            </select>
+          </div>
+          <div class="form-group btn-drop">
+            <label for="complainImage" class="">Photo of complaint</label>
+            <img [src]="complainImagepath" class="complainImage" (click)="selectImage()">
+          </div>
+          <div class="form-group">
+            <label for="complainDate">Date of complaints</label>
+            <input formControlName="complainDate" type="datetime" class="form-control" id="complainDate" [value]="todayDate" readonly>
+          </div>
+          <div class="form-group">
+            <label for="complainDetails">Complaint details</label>
+            <textarea  formControlName="complainDetails" class="form-control" id="complainDetails" rows="3"></textarea>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row no-margin go-next">
+    <div class="col-12">
+      <input type="submit" [disabled]="loading" class="form-control" name="Submit" value="Submit">
+    </div>
+  </div>
+</form>
